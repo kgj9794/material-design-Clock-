@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="icon" href="./images/5.png">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>시계⏰</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="meterstyle.css" rel="stylesheet" type="text/css" />
+	<link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+	<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js">
+
+	</script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body align="center" oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+  <a href="https://coupledday.o-r.kr/" ><button class="mdc-icon-button material-icons" style="color:white; position:fixed; top : 19px; left:9px;" id="g">calendar_today</button></a>
+	<span class="js-weather" style="color:white; position:fixed; top : 3;  margin: 3 auto;
+   left: 0;
+   right: 0;" id="a"></span>
+    <br><br><br><br><br><br><br><br><br><br>
+    <!--<div class="js-dday" ><h4  style="color:white;font-size: 25px;position:fixed; margin:  -10px ;
+   left: 0;
+   right: 0;">DDay 로드중..</h4></div>-->
+   
+    <div class="js-clock" >
+      <h1 class="js-title" id=clock_color style="position:fixed;top : 5;  margin: 0 auto;
+   left: 0;
+   right: 0;">00:00:00</h1>
+      <h3 id=clock_color2 style="position:fixed;top : 5;  margin: 100px auto;
+   left: 0;
+   right: 0;">0000년 00월 00일</h3>
+    </div>
+    <form class="js-form form" style="position:fixed;top : 5;  margin: 155px auto;
+   left: 400px;
+   right: 0;">
+      <div class="group">      
+      <input type="text" required id="four">
+      <span class="highlight"></span>
+      <span class="bar" style=" position:fixed;top : 5;  margin: 25px auto;
+   left: 0;
+   right: 0;"></span>
+      <label style=" color: #ecf0f1; position:fixed;top : 5;  margin: 360px auto;
+   left: 0;
+   right: 0;" id="three">이름을 입력해주세요!</label>
+      
+    </div>
+    <button class="mdc-icon-button material-icons" style="color:white; position:fixed;top : 5;  margin: -15px auto;
+   left: 365px;
+   right: 0;" id="send">send</button>
+    </form>
+    
+    <h2 class="js-greetings greetings" style="color:white;position:fixed;top : 5;  margin: 150px auto;
+   left: 0;
+   right: 0;"></h2>
+    <form class="js-toDoForm" style="color:white;position:fixed;top : 5;  margin: 215px auto;
+   left: 400px;
+   right: 0;">
+      <div class="group">      
+      <input type="text" required id="two">
+      <span class="highlight"></span>
+      <span class="bar" style=" position:fixed;top : 5;  margin: 25px auto;
+   left: 0;
+   right: 0;"></span>
+      <label style=" color: #ecf0f1; position:fixed;top : 5;  margin: 420px auto;
+   left: 0;
+   right: 0;" id="il">할 일을 입력하세요..</label>
+    </div>
+      <button class="mdc-icon-button material-icons" style="color:white; position:fixed;top : 5;  margin: -15px auto;
+   left: 360px;
+   right: 0;">add</button>
+    </form>
+    <hr width="550px" style="position:fixed;top : 5;  margin: 250px auto;
+   left: 0;
+   right: 0;">
+    <ul class="js-toDoList" style="color:white; list-style:none; width: 400px; margin-left: auto; margin-right: auto; position:fixed;top : 5;  margin: 260px auto;
+   left: 0;
+   right: 0;" align="left">
+    </ul>
+    <a href="https://www.instagram.com/gun.jooo/"><h5 style="color:white; position:fixed; bottom : 0; left:0;">&nbsp;powered by kimgunjoo😊</h5></a>
+  
+    
+    <script src="clock.js"></script>
+    <script src="gretting.js"></script>
+    <script src="todo.js"></script>
+    <script src="bg.js"></script>
+    <script src="weather.js"></script>
+    <script src="dday.js"></script>
+  </body>
+</html>
